@@ -162,4 +162,8 @@ pip-log.txt
 # Mac crap
 .DS_Store
 
+<<<<<<< HEAD
 *.pem
+=======
+*.pem
+>>>>>>> 40834c7b274b0974cbddd502f201717af4b70932
