@@ -13,8 +13,11 @@ chrome.webRequest.onBeforeRequest.addListener(
 	if(~info.url.indexOf("fp/")) redirect = "https://fp.auburn.edu/" + info.url.substring(info.url.indexOf("fp/") + "fp/".length);
 	else if(~info.url.indexOf("cws/")) redirect = "http://cws.auburn.edu/" + info.url.substring(info.url.indexOf("cws/") + "cws/".length);
 	else if(~info.url.indexOf("dev/")) redirect = "http://cwsdev.auburn.edu/" + info.url.substring(info.url.indexOf("dev/") + "dev/".length);
+	else if(~info.url.indexOf("cwsdev/")) redirect = "http://cwsdev.auburn.edu/" + info.url.substring(info.url.indexOf("cwsdev/") + "cwsdev/".length);
 	else if(~info.url.indexOf("test/")) redirect = "http://cwstest.auburn.edu/" + info.url.substring(info.url.indexOf("test/") + "test/".length);
+	else if(~info.url.indexOf("cwstest/")) redirect = "http://cwstest.auburn.edu/" + info.url.substring(info.url.indexOf("cwstest/") + "cwstest/".length);
 	else if(~info.url.indexOf("migr/")) redirect = "http://cwsmigr.auburn.edu/" + info.url.substring(info.url.indexOf("migr/") + "migr/".length);
+	else if(~info.url.indexOf("cwsmigr/")) redirect = "http://cwsmigr.auburn.edu/" + info.url.substring(info.url.indexOf("cwsmigr/") + "cwsmigr/".length);
 	
 	/* We should make an ajax request to see if the targeted location actually exists. */
 	
@@ -26,8 +29,11 @@ chrome.webRequest.onBeforeRequest.addListener(
       "*://fp/*",
 	  "*://cws/*",
 	  "*://dev/*",
+	  "*://cwsdev/*",
 	  "*://test/*",
-	  "*://migr/*"
+	  "*://cwstest/*",
+	  "*://migr/*",
+	  "*://cwsmigr/*"
     ]
   },
   ["blocking"]);
