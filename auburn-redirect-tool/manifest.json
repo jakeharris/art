@@ -3,7 +3,7 @@
   "version": "0.7",
   "description": "Auburn Redirect Tool allows simple URL replacement ciphers for domains frequently used by the CWS team.",
   "permissions": ["webRequest", "webRequestBlocking", "webNavigation",
-                  "*://fp.auburn.edu/*", "*://fp/*", "*://cws/*", "*://oitapps/*", "*://dev/*", "*://cwsdev/*", "*://oitappsdev/*", "*://test/*", "*://cwstest/*", "*://oitappstest/*", "*://migr/*", "*://cwsmigr/*", "*://oitappsmigr/*", "*://auburn/*", "*://auaccess2.auburn.edu/*"],
+                  "*://cws.auburn.edu/shared/*", "*://fp.auburn.edu/*", "*://fp/*", "*://cws/*", "*://oitapps/*", "*://dev/*", "*://cwsdev/*", "*://oitappsdev/*", "*://test/*", "*://cwstest/*", "*://oitappstest/*", "*://migr/*", "*://cwsmigr/*", "*://oitappsmigr/*", "*://auburn/*", "*://auaccess2.auburn.edu/*"],
   "background": {
     "scripts": ["art.js"]
   },
@@ -13,5 +13,9 @@
 		"matches": ["*://auaccess2.auburn.edu/cp/home/displaylogin"]
 	}
 	],
+  "page_action": {
+    "default_icon": "icon19.png",
+    "default_title": "ART"
+  },
   "manifest_version": 2
 }
